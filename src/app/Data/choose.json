@@ -1,17 +1,17 @@
 [
   {
-    "img": "/assets/img/icons/car.svg",   
-    "title": "Car Protection & Fitness",
-    "desc": "Regular oil changes are essential for keeping the asd engine lubricated reducing."
+    "img": "/assets/img/icons/service_icon_1.svg",
+    "title": "Same-Day Service Available",
+    "desc": "Fast response times for urgent cooling repairs and installations across Melbourne metro areas."
   },
   {
-    "img": "/assets/img/icons/engine.svg",   
-    "title": "Expert Engine & Balancing",
-    "desc": "The old engine oil is drained and replaced with fresh oil, and the oil filter is also replaced."
+    "img": "/assets/img/icons/service_icon_2.svg",
+    "title": "Licensed & Experienced Technicians",
+    "desc": "Fully qualified cooling specialists with 15+ years experience in split systems, evaporative and ducted solutions."
   },
   {
-    "img": "/assets/img/icons/gear_icon_2.svg",   
-    "title": "Wing shield & glass Repair",
-    "desc": "The braking system is crucial for safety requiring car regular maintenance to ensure optimal"
-  }   
+    "img": "/assets/img/icons/service_icon_3.svg",
+    "title": "24/7 Emergency Support",
+    "desc": "Round-the-clock emergency cooling repairs when you need them most - call 0405133761 anytime."
+  }
 ]

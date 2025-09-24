@@ -2,49 +2,49 @@
   {
     "img": "/assets/img/service_img_1.jpg",
     "icon": "/assets/img/icons/service_icon_1.svg",
-    "title": "Brake Safe Inspection",
-    "desc": "If your car struggles to start the lights dim when idling or the battery over three years old it may be time",   
-    "btnText": "READ MORE",
+    "title": "Split System Installation & Repair",
+    "desc": "Professional split system air conditioning installation, repair and maintenance services across Melbourne. Energy-efficient cooling solutions with same-day service available. Call 0405133761 for expert assistance.",
+    "btnText": "CALL NOW",
     "btnLink": "/service/service-details"
   },
   {
     "img": "/assets/img/service_img_2.jpg",
     "icon": "/assets/img/icons/service_icon_2.svg",
-    "title": "Engine Tune-Up Plus",
-    "desc": "Proper insulation and ventilation are key  also offer Ice Guard services to prevent ice buildup and damage If your check battery",   
-    "btnText": "READ MORE",
+    "title": "Evaporative Cooling Service",
+    "desc": "Complete evaporative cooling system installation, repair and maintenance in Melbourne. Eco-friendly cooling solutions that reduce energy costs. Expert technicians available 7 days a week.",
+    "btnText": "CALL NOW",
     "btnLink": "/service/service-details"
   },
   {
     "img": "/assets/img/service_img_3.jpg",
     "icon": "/assets/img/icons/service_icon_3.svg",
-    "title": "Battery Boost Check",
-    "desc": "If your check battery light comes on it's best to schedule a diagnostic service as soon as possible to identify address",   
-    "btnText": "READ MORE",
+    "title": "Ducted Refrigeration Systems",
+    "desc": "Professional ducted refrigeration installation and repair services across Melbourne. Whole-home cooling solutions with expert maintenance programs. Contact us today for a free quote.",
+    "btnText": "CALL NOW",
     "btnLink": "/service/service-details"
   },
   {
     "img": "/assets/img/service_img_7.jpg",
     "icon": "/assets/img/icons/service_icon_6.svg",
-    "title": "Brake Safe Inspection",
-    "desc": "If your car struggles to start the lights dim when idling or the battery over three years old it may be time",   
-    "btnText": "READ MORE",
+    "title": "Emergency Cooling Repairs",
+    "desc": "24/7 emergency air conditioning repair services in Melbourne. Fast response times for urgent cooling system breakdowns. Licensed technicians ready to restore your comfort immediately.",
+    "btnText": "EMERGENCY CALL",
     "btnLink": "/service/service-details"
   },
   {
     "img": "/assets/img/service_img_5.jpg",
     "icon": "/assets/img/icons/service_icon_4.svg",
-    "title": "Engine Tune-Up Plus",
-    "desc": "Proper insulation and ventilation are key  also offer Ice Guard services to prevent ice buildup and damage If your check battery",   
-    "btnText": "READ MORE",
+    "title": "Air Conditioning Maintenance",
+    "desc": "Regular air conditioning maintenance services to keep your cooling systems running efficiently. Prevent costly breakdowns with our comprehensive service plans across Melbourne.",
+    "btnText": "CALL NOW",
     "btnLink": "/service/service-details"
   },
   {
     "img": "/assets/img/service_img_6.jpg",
     "icon": "/assets/img/icons/service_icon_5.svg",
-    "title": "Battery Boost Check",
-    "desc": "If your check battery light comes on it's best to schedule a diagnostic service as soon as possible to identify address",   
-    "btnText": "READ MORE",
+    "title": "Cooling System Installation",
+    "desc": "Expert installation of all types of cooling systems in Melbourne homes and businesses. From split systems to ducted solutions, we provide professional installation with warranty coverage.",
+    "btnText": "CALL NOW",
     "btnLink": "/service/service-details"
-  }  
+  }
 ]

@@ -1,20 +1,26 @@
 [
   {
     "img1": "/assets/img/avatar_2.png",
-    "subTitle": "Business Woman",
-    "title": "Kathryn Murphy",
-    "desc": "Insufficient cooling or heating, strange noises when the A/C is on, or foul car odors coming from the vents Flickering lights, non-functioning accessories, or trouble starting the vehicle"  
+    "subTitle": "Homeowner - Richmond",
+    "title": "Sarah Mitchell",
+    "desc": "Cooling Service Melbourne saved our summer! Our split system broke down during the heatwave and they were out the same day. Professional, reliable and reasonably priced. Highly recommend calling 0405133761."
   },
   {
     "img1": "/assets/img/avatar_3.png",
-    "subTitle": "Business Man",
-    "title": "Cameron Williamson",
-    "desc": "Often recommended every 15,000 to 30,000 miles, depending on the vehicle age and condition Flickering lights, non-functioning accessories, or trouble starting the vehicle Body and paint services"
+    "subTitle": "Business Owner - Carlton",
+    "title": "David Chen",
+    "desc": "Excellent service for our office ducted system. The technician was knowledgeable, explained everything clearly, and completed the repair quickly. Our staff were comfortable again within hours. Will definitely use them again."
   },
   {
-    "img1": "/assets/img/avatar_2.png",
-    "subTitle": "Business Icon",
-    "title": "Kathryn Murphy",
-    "desc": "Insufficient cooling or heating, strange noises when the A/C is on, or foul car odors coming from the vents Flickering lights, non-functioning accessories, or trouble starting the vehicle"
+    "img1": "/assets/img/avatar_4.png",
+    "subTitle": "Resident - Hawthorn",
+    "title": "Jessica Taylor",
+    "desc": "Outstanding emergency service! Our evaporative cooling failed on a 40-degree day. They responded within 2 hours and had us cool again by evening. Professional technicians who really know their stuff. Thank you!"
+  },
+  {
+    "img1": "/assets/img/avatar_5.png",
+    "subTitle": "Property Manager - Toorak",
+    "title": "Michael Roberts",
+    "desc": "We use Cooling Service Melbourne for all our rental properties. Always prompt, fair pricing, and quality work. Their maintenance service has prevented costly breakdowns. Great communication and reliable service every time."
   }
 ]
