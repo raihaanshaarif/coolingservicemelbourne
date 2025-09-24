@@ -112,8 +112,8 @@ const About1 = ({
                     <Image
                       src="/assets/img/icons/quick-fix.svg"
                       alt="img"
-                      width={37}
-                      height={40}
+                      width={49}
+                      height={53}
                     />
                   </div>
                   <h3 className="cs_iconbox_title cs_fs_24 cs_semibold mb-0">
@@ -141,11 +141,13 @@ const About1 = ({
                 </Link>
                 <div className="cs_avatar cs_style_1 wow fadeInRight">
                   <div className="cs_avatar_thumbnail cs_center cs_radius_50">
-                    {/* <Image src={avatar} alt="img" width={48} height={48} /> */}
+                    <Image src={avatar} alt="img" width={48} height={48} />
                   </div>
                   <div className="cs_avatar_info">
-                    {/* <h3 className="cs_heading_color cs_fs_18 cs_semibold mb-0">{name}</h3>
-                       <p className="cs_fs_14 mb-0">{designation}</p> */}
+                    <h3 className="cs_heading_color cs_fs_18 cs_semibold mb-0">
+                      {name}
+                    </h3>
+                    <p className="cs_fs_14 mb-0">{designation}</p>
                   </div>
                 </div>
               </div>
