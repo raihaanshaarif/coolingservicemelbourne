@@ -2,49 +2,33 @@
   {
     "img": "/assets/img/service_img_1.jpg",
     "icon": "/assets/img/icons/service_icon_1.svg",
-    "title": "Split System Installation & Repair",
+    "title": "Split System Air Conditioning",
     "desc": "Professional split system air conditioning installation, repair and maintenance services across Melbourne. Energy-efficient cooling solutions with same-day service available. Call 0405133761 for expert assistance.",
-    "btnText": "CALL NOW",
-    "btnLink": "/service/service-details"
+    "btnText": "FIND ALL SERVICES",
+    "btnLink": "/service/split-system"
   },
   {
     "img": "/assets/img/service_img_2.jpg",
     "icon": "/assets/img/icons/service_icon_2.svg",
-    "title": "Evaporative Cooling Service",
+    "title": "Evaporative Cooling Systems",
     "desc": "Complete evaporative cooling system installation, repair and maintenance in Melbourne. Eco-friendly cooling solutions that reduce energy costs. Expert technicians available 7 days a week.",
-    "btnText": "CALL NOW",
-    "btnLink": "/service/service-details"
+    "btnText": "FIND ALL SERVICES",
+    "btnLink": "/service/evaporative-cooling-systems"
   },
   {
     "img": "/assets/img/service_img_3.jpg",
     "icon": "/assets/img/icons/service_icon_3.svg",
     "title": "Ducted Refrigeration Systems",
     "desc": "Professional ducted refrigeration installation and repair services across Melbourne. Whole-home cooling solutions with expert maintenance programs. Contact us today for a free quote.",
-    "btnText": "CALL NOW",
-    "btnLink": "/service/service-details"
+    "btnText": "FIND ALL SERVICES",
+    "btnLink": "/service/ducted-refrigeration-systems"
   },
   {
     "img": "/assets/img/service_img_7.jpg",
     "icon": "/assets/img/icons/service_icon_6.svg",
-    "title": "Emergency Cooling Repairs",
+    "title": "Emergency Cooling Services",
     "desc": "24/7 emergency air conditioning repair services in Melbourne. Fast response times for urgent cooling system breakdowns. Licensed technicians ready to restore your comfort immediately.",
-    "btnText": "EMERGENCY CALL",
-    "btnLink": "/service/service-details"
-  },
-  {
-    "img": "/assets/img/service_img_5.jpg",
-    "icon": "/assets/img/icons/service_icon_4.svg",
-    "title": "Air Conditioning Maintenance",
-    "desc": "Regular air conditioning maintenance services to keep your cooling systems running efficiently. Prevent costly breakdowns with our comprehensive service plans across Melbourne.",
-    "btnText": "CALL NOW",
-    "btnLink": "/service/service-details"
-  },
-  {
-    "img": "/assets/img/service_img_6.jpg",
-    "icon": "/assets/img/icons/service_icon_5.svg",
-    "title": "Cooling System Installation",
-    "desc": "Expert installation of all types of cooling systems in Melbourne homes and businesses. From split systems to ducted solutions, we provide professional installation with warranty coverage.",
-    "btnText": "CALL NOW",
-    "btnLink": "/service/service-details"
+    "btnText": "FIND ALL SERVICES",
+    "btnLink": "/service/emergency-cooling-services"
   }
 ]

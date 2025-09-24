@@ -16,6 +16,7 @@ const Contact1 = ({
 }) => {
   return (
     <section>
+      <div className="cs_height_120 cs_height_lg_80"></div>
       <div className="container">
         <div className="row cs_row_gap_40 cs_gap_y_40">
           <div className="col-lg-6">
