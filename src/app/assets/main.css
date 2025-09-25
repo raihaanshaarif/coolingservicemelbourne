@@ -4036,6 +4036,11 @@ textarea {
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
+  line-clamp: 2;
+  line-clamp: 2;
+  line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
 }
 .cs_post.cs_style_1 .cs_post_date {
@@ -5128,6 +5133,8 @@ textarea {
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
 }
 .cs_card.cs_style_1:hover .cs_card_icon {
@@ -8974,5 +8981,800 @@ label {
   .cs_service_brands strong {
     font-size: 14px;
     padding: 10px 15px;
+  }
+}
+
+/* Professional Brands Page Styling */
+@keyframes brand-float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes brand-glow {
+  0%,
+  100% {
+    box-shadow: 0 5px 20px rgba(239, 15, 58, 0.2);
+  }
+  50% {
+    box-shadow: 0 10px 40px rgba(239, 15, 58, 0.4);
+  }
+}
+
+@keyframes brand-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes brand-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.02);
+    opacity: 0.95;
+  }
+}
+
+@keyframes brand-shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+/* Main Brand Items */
+.cs_brand_item {
+  position: relative;
+  background: linear-gradient(135deg, #ffffff 0%, #fdfdfd 50%, #f8f9fa 100%);
+  border: 2px solid rgba(239, 15, 58, 0.08);
+  border-radius: 20px;
+  padding: 30px !important;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08), 0 3px 10px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(10px);
+}
+
+.cs_brand_item::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(239, 15, 58, 0.1),
+    transparent
+  );
+  border-radius: 17px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.cs_brand_item:hover {
+  transform: translateY(-15px) scale(1.02);
+  border-color: rgba(239, 15, 58, 0.3);
+  background: linear-gradient(135deg, #ffffff 0%, #fefefe 50%, #f9f9f9 100%);
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.15), 0 15px 40px rgba(0, 0, 0, 0.1),
+    0 5px 20px rgba(239, 15, 58, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.cs_brand_item:hover::before {
+  opacity: 1;
+}
+
+/* Brand Header */
+.cs_brand_header {
+  position: relative;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgba(239, 15, 58, 0.08);
+  align-items: flex-start !important;
+}
+
+.cs_brand_header .cs_brand_logo {
+  margin-right: 25px !important;
+  flex-shrink: 0;
+}
+
+.cs_brand_logo_placeholder {
+  background: linear-gradient(135deg, #ffffff, #f8f9fa);
+  border: 2px solid rgba(239, 15, 58, 0.15);
+  border-radius: 12px;
+  padding: 15px 20px;
+  min-width: 120px;
+  min-height: 80px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.cs_brand_logo_placeholder::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  transition: left 0.6s ease;
+}
+
+.cs_brand_item:hover .cs_brand_logo_placeholder {
+  border-color: var(--accent-color);
+  background: linear-gradient(135deg, var(--accent-color), #ff6b7a);
+  color: white !important;
+  transform: scale(1.08) rotate(2deg);
+  box-shadow: 0 8px 30px rgba(239, 15, 58, 0.3);
+}
+
+.cs_brand_item:hover .cs_brand_logo_placeholder span {
+  color: white !important;
+  font-weight: 600;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.cs_brand_item:hover .cs_brand_logo_placeholder::before {
+  left: 100%;
+}
+
+/* Brand Features */
+.cs_brand_features {
+  background: linear-gradient(
+    135deg,
+    rgba(248, 249, 250, 0.9),
+    rgba(239, 15, 58, 0.03),
+    rgba(233, 236, 239, 0.7)
+  );
+  border-radius: 15px;
+  padding: 25px;
+  border: 1px solid rgba(239, 15, 58, 0.1);
+  margin-bottom: 25px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cs_brand_features::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-color), #ff6b7a, #4ecdc4);
+  border-radius: 15px 15px 0 0;
+}
+
+.cs_brand_features h4 {
+  position: relative;
+  padding-left: 25px;
+  display: flex;
+  align-items: center;
+  line-height: 1.4;
+}
+
+.cs_brand_features h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  background: linear-gradient(45deg, var(--accent-color), #ff6b7a);
+  border-radius: 50%;
+  box-shadow: 0 3px 10px rgba(239, 15, 58, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  flex-shrink: 0;
+}
+
+/* Enhanced Typography */
+.cs_brand_item h3,
+.cs_brand_item_small h3 {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.cs_brand_item:hover h3,
+.cs_brand_item_small:hover h3 {
+  color: var(--accent-color) !important;
+}
+
+.cs_brand_item p,
+.cs_brand_item_small p {
+  transition: color 0.3s ease;
+}
+
+.cs_brand_item:hover p,
+.cs_brand_item_small:hover p {
+  color: #495057 !important;
+}
+
+/* Small Brand Items */
+.cs_brand_item_small {
+  position: relative;
+  background: linear-gradient(135deg, #ffffff 0%, #fdfdfd 50%, #f8f9fa 100%);
+  border: 2px solid rgba(239, 15, 58, 0.06);
+  border-radius: 16px;
+  padding: 25px !important;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06), 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.cs_brand_item_small::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-color), #ff6b7a, #4ecdc4);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.cs_brand_item_small:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12), 0 8px 25px rgba(0, 0, 0, 0.08),
+    0 3px 15px rgba(239, 15, 58, 0.1);
+  border-color: rgba(239, 15, 58, 0.2);
+  background: linear-gradient(135deg, #ffffff 0%, #fefefe 50%, #f9f9f9 100%);
+}
+
+.cs_brand_item_small:hover::before {
+  transform: scaleX(1);
+}
+
+.cs_brand_logo_placeholder_small {
+  background: linear-gradient(135deg, #ffffff, #f8f9fa);
+  border: 2px solid rgba(239, 15, 58, 0.15);
+  border-radius: 10px;
+  padding: 12px 16px;
+  min-width: 100px;
+  min-height: 70px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.cs_brand_item_small:hover .cs_brand_logo_placeholder_small {
+  background: linear-gradient(135deg, var(--accent-color), #ff6b7a);
+  color: white !important;
+  transform: scale(1.1);
+}
+
+.cs_brand_item_small:hover .cs_brand_logo_placeholder_small span {
+  color: white !important;
+}
+
+/* Why Choose Brands Section */
+.cs_why_choose_brands {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #f8f9fa 100%);
+  background-size: 200% 200%;
+  animation: brand-gradient 8s ease-in-out infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+.cs_why_choose_brands::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(239, 15, 58, 0.05) 0%,
+    transparent 70%
+  );
+  animation: brand-float 6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.cs_why_item {
+  position: relative;
+  z-index: 1;
+}
+
+.cs_why_icon {
+  background: linear-gradient(45deg, var(--accent-color), #ff6b7a);
+  box-shadow: 0 8px 25px rgba(239, 15, 58, 0.3),
+    inset 0 2px 0 rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
+  animation: brand-glow 3s ease-in-out infinite;
+}
+
+.cs_why_item:hover .cs_why_icon {
+  transform: scale(1.1) rotate(5deg);
+  animation-play-state: paused;
+  box-shadow: 0 12px 35px rgba(239, 15, 58, 0.4),
+    inset 0 2px 0 rgba(255, 255, 255, 0.4);
+}
+
+/* Consultation Section */
+.cs_consultation_section {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 50%, #ffffff 100%);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.cs_consultation_section::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(
+    45deg,
+    var(--accent-color),
+    #ff6b7a,
+    #4ecdc4,
+    var(--accent-color)
+  );
+  border-radius: 22px;
+  z-index: -1;
+  background-size: 300% 300%;
+  animation: brand-gradient 6s ease-in-out infinite;
+}
+
+/* Brand Specialists Section */
+.cs_brand_specialists {
+  background: linear-gradient(
+    135deg,
+    var(--accent-color) 0%,
+    #ff6b7a 50%,
+    var(--accent-color) 100%
+  );
+  background-size: 200% 200%;
+  animation: brand-gradient 10s ease-in-out infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+.cs_brand_specialists::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+      circle at 30% 70%,
+      rgba(255, 255, 255, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 70% 30%,
+      rgba(255, 255, 255, 0.05) 0%,
+      transparent 50%
+    );
+  pointer-events: none;
+}
+
+.cs_specialist_item {
+  position: relative;
+  z-index: 1;
+}
+
+.cs_specialist_number {
+  background: linear-gradient(45deg, #ffffff, #f8f9fa);
+  color: var(--accent-color) !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2),
+    inset 0 2px 0 rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.cs_specialist_item:hover .cs_specialist_number {
+  transform: scale(1.15) rotate(10deg);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25),
+    inset 0 2px 0 rgba(255, 255, 255, 0.9);
+}
+
+/* Button Enhancements */
+.cs_brand_item .cs_btn,
+.cs_brand_item_small .cs_btn {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.cs_brand_item .cs_btn::before,
+.cs_brand_item_small .cs_btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.cs_brand_item .cs_btn:hover::before,
+.cs_brand_item_small .cs_btn:hover::before {
+  left: 100%;
+}
+
+.cs_brand_item .cs_btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(239, 15, 58, 0.4);
+}
+
+.cs_brand_item_small .cs_btn {
+  background: linear-gradient(45deg, var(--accent-color), #ff6b7a) !important;
+  color: white !important;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.cs_brand_item_small .cs_btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.cs_brand_item_small .cs_btn:hover {
+  background: linear-gradient(45deg, #ff6b7a, var(--accent-color)) !important;
+  color: white !important;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(239, 15, 58, 0.3);
+}
+
+.cs_brand_item_small .cs_btn:hover::before {
+  left: 100%;
+}
+
+/* List Styling in Brand Items */
+.cs_brand_item .cs_list li,
+.cs_brand_item_small .cs_list li {
+  position: relative;
+  padding-left: 25px;
+  transition: all 0.2s ease;
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+  min-height: 24px;
+}
+
+.cs_brand_item .cs_list li::before,
+.cs_brand_item_small .cs_list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  background: linear-gradient(45deg, #28a745, #20c997);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
+  transition: all 0.2s ease;
+}
+
+.cs_brand_item .cs_list li:hover,
+.cs_brand_item_small .cs_list li:hover {
+  color: var(--heading-color);
+  padding-left: 30px;
+}
+
+.cs_brand_item .cs_list li:hover::before,
+.cs_brand_item_small .cs_list li:hover::before {
+  transform: translateY(-50%) scale(1.2);
+  box-shadow: 0 4px 15px rgba(40, 167, 69, 0.4);
+}
+
+/* Responsive Enhancements */
+@media (max-width: 1199px) {
+  .cs_brand_item {
+    margin-bottom: 30px;
+  }
+
+  .cs_why_icon {
+    width: 70px !important;
+    height: 70px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .cs_brand_item:hover {
+    transform: translateY(-5px);
+  }
+
+  .cs_brand_item_small:hover {
+    transform: translateY(-3px);
+  }
+
+  .cs_why_choose_brands {
+    padding: 40px 25px !important;
+  }
+
+  .cs_consultation_section {
+    padding: 40px 25px !important;
+  }
+
+  .cs_brand_specialists {
+    padding: 40px 25px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .cs_brand_item,
+  .cs_brand_item_small {
+    margin-bottom: 30px;
+    padding: 25px !important;
+  }
+
+  .cs_brand_header {
+    flex-direction: column !important;
+    text-align: center;
+    align-items: center !important;
+    border-bottom: none;
+    padding-bottom: 15px;
+  }
+
+  .cs_brand_header .cs_brand_logo {
+    margin-right: 0 !important;
+    margin-bottom: 20px;
+  }
+
+  .cs_brand_logo_placeholder {
+    margin-bottom: 0;
+    margin-right: 0 !important;
+    min-width: 140px;
+    min-height: 90px;
+    padding: 20px 25px;
+  }
+
+  .cs_brand_logo_placeholder_small {
+    min-width: 120px;
+    min-height: 80px;
+    padding: 15px 20px;
+  }
+
+  .cs_specialist_number {
+    width: 50px !important;
+    height: 50px !important;
+    font-size: 20px !important;
+  }
+
+  .cs_why_icon {
+    width: 60px !important;
+    height: 60px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .cs_brand_item,
+  .cs_brand_item_small {
+    padding: 20px !important;
+    border-radius: 15px;
+  }
+
+  .cs_brand_features {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .cs_brand_logo_placeholder {
+    min-width: 120px;
+    min-height: 80px;
+    padding: 15px 20px;
+  }
+
+  .cs_brand_logo_placeholder_small {
+    min-width: 100px;
+    min-height: 70px;
+    padding: 12px 16px;
+  }
+
+  .cs_consultation_section,
+  .cs_brand_specialists {
+    padding: 30px 20px !important;
+  }
+
+  .cs_brand_item:hover {
+    transform: translateY(-8px) scale(1.01);
+  }
+
+  .cs_brand_item_small:hover {
+    transform: translateY(-5px);
+  }
+}
+
+/* Additional Visual Enhancements */
+.cs_brand_item .cs_fs_24,
+.cs_brand_item_small .cs_fs_24 {
+  background: linear-gradient(135deg, var(--heading-color), #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600 !important;
+}
+
+.cs_brand_item:hover .cs_fs_24,
+.cs_brand_item_small:hover .cs_fs_24 {
+  background: linear-gradient(135deg, var(--accent-color), #ff6b7a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Improved Button Styling */
+.cs_brand_item .cs_btn:focus,
+.cs_brand_item_small .cs_btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(239, 15, 58, 0.2);
+}
+
+/* Enhanced List Items */
+.cs_brand_item .cs_list li,
+.cs_brand_item_small .cs_list li {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(239, 15, 58, 0.02),
+    transparent
+  );
+  border-radius: 5px;
+  margin-bottom: 8px;
+  padding: 8px 8px 8px 25px;
+}
+
+/* Loading Animation for Better UX */
+.cs_brand_item,
+.cs_brand_item_small {
+  animation: brand-pulse 4s ease-in-out infinite;
+  animation-delay: calc(var(--brand-delay, 0) * 0.2s);
+}
+
+.cs_brand_item:hover,
+.cs_brand_item_small:hover {
+  animation-play-state: paused;
+}
+
+/* Additional Margin Right Utility Classes */
+.cs_mr_20 {
+  margin-right: 20px !important;
+}
+
+.cs_mr_25 {
+  margin-right: 25px !important;
+}
+
+.cs_mr_30 {
+  margin-right: 30px !important;
+}
+
+.cs_mr_35 {
+  margin-right: 35px !important;
+}
+
+.cs_mr_40 {
+  margin-right: 40px !important;
+}
+
+/* Enhanced Product Cards Styling */
+.cs_product_item {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.cs_product_item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+}
+
+.cs_product_item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-color), var(--primary-color));
+  border-radius: 15px 15px 0 0;
+}
+
+.cs_product_header {
+  align-items: flex-start;
+}
+
+.cs_product_icon {
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.cs_product_item:hover .cs_product_icon {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(var(--accent-color-rgb), 0.3);
+}
+
+.cs_product_list .cs_list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+}
+
+.cs_product_list .cs_list li::before {
+  content: "\F26A";
+  font-family: "bootstrap-icons";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: var(--accent-color);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Responsive enhancements */
+@media (max-width: 768px) {
+  .cs_product_header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cs_product_icon {
+    margin-right: 0 !important;
+    margin-bottom: 15px;
   }
 }

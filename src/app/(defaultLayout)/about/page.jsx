@@ -1,12 +1,7 @@
 import About1 from "@/app/Components/About/About1";
-import Brand1 from "@/app/Components/Brand/Brand1";
 import BreadCumb from "@/app/Components/Common/BreadCumb";
 import Contact1 from "@/app/Components/ContactInfo/Contact1";
-import Process2 from "@/app/Components/Process/Process2";
 import Services1 from "@/app/Components/Services/Services1";
-import Team1 from "@/app/Components/Team/Team1";
-import Testimonial1 from "@/app/Components/Testimonial/Testimonial1";
-import Testimonial2 from "@/app/Components/Testimonial/Testimonial2";
 import React from "react";
 
 const page = () => {
@@ -42,9 +37,7 @@ const page = () => {
         designation="Lead Technician & Owner"
       ></About1>
       <Services1></Services1>
-      <Process2></Process2>
-      <Team1></Team1>
-      <Testimonial2></Testimonial2>
+
       {/* <Brand1></Brand1> */}
       <Contact1
         Title="Get In Touch Today"
